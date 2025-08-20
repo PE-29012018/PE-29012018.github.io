@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philip Dreßel - Portfolio</title>
+    
+    <!-- Google Fonts - Poppins für moderne, saubere Typografie -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Verknüpfung zur CSS-Datei -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Benutzerdefinierter Cursor-Spotlight Effekt -->
+    <div class="cursor-spotlight" id="cursorSpotlight"></div>
+
+    <!-- Header/Navigation - Schwebendes Menü, das beim Scrollen sichtbar bleibt -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <!-- Logo/Name -->
+            <div class="nav__logo">
+                <a href="#home">Philip Dreßel</a>
+            </div>
+            
+            <!-- Navigationsmenü -->
+            <ul class="nav__menu" id="navMenu">
+                <li class="nav__item">
+                    <a href="#home" class="nav__link active">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#about" class="nav__link">Über Mich</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#portfolio" class="nav__link">Portfolio</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#contact" class="nav__link">Kontakt</a>
+                </li>
+            </ul>
+
+            <!-- Mobile Hamburger Menü -->
+            <div class="nav__toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero-Sektion - Bildschirmfüllender Willkommensbereich -->
+        <section class="hero" id="home">
+            <div class="hero__container">
+                <div class="hero__content fade-in-element">
+                    <h1 class="hero__title">
+                        Hallo, ich bin <span class="hero__name">Philip Dreßel</span>
+                    </h1>
+                    <p class="hero__subtitle">
+                        Doktorand • Cloud-Experte • Datenanalyst
+                    </p>
+                    <p class="hero__description">
+                        Spezialisiert auf Cloud Computing, Microsoft Azure und innovative Produktkonfiguratoren
+                    </p>
+                    <div class="hero__cta">
+                        <a href="#about" class="btn btn--primary">Mehr über mich</a>
+                        <a href="#portfolio" class="btn btn--outline">Portfolio ansehen</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Über Mich Sektion -->
+        <section class="about" id="about">
+            <div class="container">
+                <div class="section__header fade-in-element">
+                    <h2 class="section__title">Über Mich</h2>
+                    <div class="section__divider"></div>
+                </div>
+                
+                <div class="about__content">
+                    <!-- Profilbild Platzhalter -->
+                    <div class="about__image fade-in-element">
+                        <div class="profile-image">
+                            <img src="images/Bild_Philip.jpg">
+                        </div>
+                    </div>
+                    
+                    <!-- Über Mich Text -->
+                    <div class="about__text fade-in-element">
+                        <p class="about__paragraph">
+                            Ich habe meine berufliche Karriere mit einer IHK-Ausbildung als Mechatroniker begonnen 
+                            und mit einem dualen Bachelor in Wirtschaftsinformatik und einem Master in Informatik fortgesetzt.
+                            Somit bringe ich eine einzigartige Kombination aus technischer Expertise und betriebswirtschaftlichem Verständnis mit.
+                        </p>
+                        <p class="about__paragraph">
+                            Aktuell bin ich Doktorand am Karlsruher Institut für Technologie (KIT) 
+                            und der HWR Berlin, wo ich mich intensiv in Kooperation mit Bosch mit  Produktkonfiguratoren beschäftige.
+                        </p>
+                        <p class="about__paragraph">
+                            Meine Leidenschaft gilt der Cloud-Technologie, insbesondere Microsoft Azure, 
+                            sowie der Datenvisualisierung mit Tools wie Tableau und Grafana. Durch die 
+                            Entwicklung von PowerApps schaffe ich maßgeschneiderte Lösungen für komplexe 
+                            Geschäftsanforderungen.
+                        </p>
+                        
+                        <!-- Kompetenzen -->
+                        <div class="skills">
+                            <h3 class="skills__title">Kernkompetenzen</h3>
+                            <div class="skills__list">
+                                <span class="skill-tag">Cloud Computing</span>
+                                <span class="skill-tag">Microsoft Azure</span>
+                                <span class="skill-tag">Datenanalyse</span>
+                                <span class="skill-tag">Tableau</span>
+                                <span class="skill-tag">Grafana</span>
+                                <span class="skill-tag">PowerApps</span>
+                                <span class="skill-tag">Produktkonfiguratoren</span>
+                                <span class="skill-tag">Data Engineering</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Sektion -->
+        <section class="portfolio" id="portfolio">
+            <div class="container">
+                <div class="section__header fade-in-element">
+                    <h2 class="section__title">Portfolio</h2>
+                    <div class="section__divider"></div>
+                    <p class="section__subtitle">
+                        Eine Auswahl meiner aktuellen Projekte und Forschungsarbeiten
+                    </p>
+                </div>
+
+                <!-- Portfolio Grid -->
+                <div class="portfolio__grid">
+                    <!-- Projekt 1: Azure Cloud Analytics Dashboard -->
+                    <article class="portfolio__item fade-in-element">
+                        <div class="portfolio__image">
+                            <div class="project-placeholder">
+                                <div class="project-icon">📊</div>
+                            </div>
+                        </div>
+                        <div class="portfolio__content">
+                            <h3 class="portfolio__title">Azure Cloud Analytics Dashboard</h3>
+                            <p class="portfolio__description">
+                                Umfassende Datenvisualisierung mit Tableau und Azure Integration 
+                                für Enterprise-Kunden zur Analyse komplexer Geschäftsdaten.
+                            </p>
+                            <div class="portfolio__tech">
+                                <span class="tech-tag">Azure</span>
+                                <span class="tech-tag">Tableau</span>
+                                <span class="tech-tag">Data Analytics</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Projekt 2: PowerApp Produktkonfigurator -->
+                    <article class="portfolio__item fade-in-element">
+                        <div class="portfolio__image">
+                            <div class="project-placeholder">
+                                <div class="project-icon">⚙️</div>
+                            </div>
+                        </div>
+                        <div class="portfolio__content">
+                            <h3 class="portfolio__title">PowerApp Produktkonfigurator</h3>
+                            <p class="portfolio__description">
+                                Forschungsprojekt zur Entwicklung intelligenter Konfigurationssysteme 
+                                für komplexe Industrieprodukte im Rahmen meiner Doktorarbeit.
+                            </p>
+                            <div class="portfolio__tech">
+                                <span class="tech-tag">PowerApps</span>
+                                <span class="tech-tag">Microsoft 365</span>
+                                <span class="tech-tag">KI</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Projekt 3: Grafana Monitoring System -->
+                    <article class="portfolio__item fade-in-element">
+                        <div class="portfolio__image">
+                            <div class="project-placeholder">
+                                <div class="project-icon">📈</div>
+                            </div>
+                        </div>
+                        <div class="portfolio__content">
+                            <h3 class="portfolio__title">Grafana Monitoring System</h3>
+                            <p class="portfolio__description">
+                                Entwicklung eines hochperformanten Cloud Infrastructure Monitoring 
+                                und Alerting Systems für kritische Geschäftsanwendungen.
+                            </p>
+                            <div class="portfolio__tech">
+                                <span class="tech-tag">Grafana</span>
+                                <span class="tech-tag">Cloud Infrastructure</span>
+                                <span class="tech-tag">Monitoring</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Projekt 4: Data Pipeline Automation -->
+                    <article class="portfolio__item fade-in-element">
+                        <div class="portfolio__image">
+                            <div class="project-placeholder">
+                                <div class="project-icon">🔄</div>
+                            </div>
+                        </div>
+                        <div class="portfolio__content">
+                            <h3 class="portfolio__title">Data Pipeline Automation</h3>
+                            <p class="portfolio__description">
+                                Automatisierte Datenverarbeitung in Azure Cloud Umgebungen 
+                                mit fokus auf Skalierbarkeit und Effizienz.
+                            </p>
+                            <div class="portfolio__tech">
+                                <span class="tech-tag">Azure</span>
+                                <span class="tech-tag">Data Engineering</span>
+                                <span class="tech-tag">Automation</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kontakt Sektion -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="section__header fade-in-element">
+                    <h2 class="section__title">Kontakt</h2>
+                    <div class="section__divider"></div>
+                    <p class="section__subtitle">
+                        Interessiert an einer Zusammenarbeit? Ich freue mich auf Ihre Nachricht!
+                    </p>
+                </div>
+
+                <div class="contact__content">
+                    <div class="contact__info fade-in-element">
+                        <div class="contact__item">
+                            <div class="contact__icon">📧</div>
+                            <div class="contact__details">
+                                <h3>E-Mail</h3>
+                                <a href="mailto:philip.dressel@partner.kit.edu" target="_blank">
+                                    philip.dressel@partner.kit.edu
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="contact__item">
+                            <div class="contact__icon">🎓</div>
+                            <div class="contact__details">
+                                <h3>Institution</h3>
+                                <p>Karlsruher Institut für Technologie (KIT)<br>
+                                   Hochschule für Wirtschaft und Recht Berlin</p>
+                            </div>
+                        </div>
+
+                        <div class="contact__item">
+                            <div class="contact__icon">🔬</div>
+                            <div class="contact__details">
+                                <h3>Forschungsfocus</h3>
+                                <p>Produktkonfiguratoren &amp; Cloud Computing</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact__cta fade-in-element">
+                        <a href="mailto:philip.dressel@partner.kit.edu" class="btn btn--primary btn--large" target="_blank">
+                            Nachricht senden
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <p class="footer__text">
+                    &copy; 2025 Philip Dreßel. Alle Rechte vorbehalten.
+                </p>
+                <div class="footer__links">
+                    <span class="footer__divider">|</span>
+                    <a href="mailto:philip.dressel@partner.kit.edu" target="_blank">Kontakt</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript-Datei einbinden -->
+    <script src="app.js"></script>
+</body>
+</html>
